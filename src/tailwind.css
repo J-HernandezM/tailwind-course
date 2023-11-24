@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .scroll {
+        @apply scrollbar-hide flex w-auto gap-5 md:gap-8 p-5 overflow-x-auto overscroll-x-contain [&>*:nth-child(even)]:bg-white [&>*:nth-child(even)]:text-terciary;
+    }
+}

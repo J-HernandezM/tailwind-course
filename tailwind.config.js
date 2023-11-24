@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./public/index.html', './src/**/*.{html,js}'],
+  content: ['./public/index.html', './src/**/*.{html,js, mjs}'],
+  mode: 'jit',
   theme: {
       colors: theme => ({
         ...theme.colors,
@@ -12,22 +13,31 @@ module.exports = {
         Montserrat: ["Montserrat", "sans-serif"],
       },	
       extend: {
+        fontSize: {
+          xxs: '9px'
+        },
         backgroundImage: {
           'sanFrancisco': "url('/public/img/sanFrancisco.jpg')",
-          'sanFranciscoDesktop': "url('../img/sanFranciscoDesktop.jpg')",
-          'yosemite': "url('../img/yosemite.jpg')",
-          'LA': "url('../img/LA.jpg')",
-          'seattle': "url('../img/seattle.jpg')",
-          'new_york': "url('../img/new_york.jpg')",
-          'norway': "url('../img/norway.jpg')",
-          'sydney': "url('../img/sydney.jpg')",
-          'miami': "url('../img/miami.jpg')",
-          'switzerland': "url('../img/switzerland.jpg')",
-          'bali': "url('../img/bali.jpg')",
-          'norway': "url('../img/norway.jpg')",
-          'chicago': "url('../img/chicago.jpg')",
-          'europe': "url('../img/europe.jpg')",
-          'iceland': "url('../img/iceland.jpg')",
+          'sanFranciscoDesktop': "url('/public/img/sanFranciscoDesktop.jpg')",
+          'yosemite': "url('/public/img/yosemite.jpg')",
+          'LA': "url('/public/img/LA.jpg')",
+          'seattle': "url('/public/img/seattle.jpg')",
+          'new_york': "url('/public/img/new_york.jpg')",
+          'norway': "url('/public/img/norway.jpg')",
+          'sydney': "url('/public/img/sydney.jpg')",
+          'miami': "url('/public/img/miami.jpg')",
+          'switzerland': "url('/public/img/switzerland.jpg')",
+          'bali': "url('/public/img/bali.jpg')",
+          'norway': "url('/public/img/norway.jpg')",
+          'chicago': "url('/public/img/chicago.jpg')",
+          'europe': "url('/public/img/europe.jpg')",
+          'iceland': "url('/public/img/iceland.jpg')",
+        },
+        gridTemplateColumns: {
+          'trending': '40% 60%'
+        },
+        gridTemplateRows: {
+          'trending': '44% 28% 28%'
         }
       },
   },
@@ -35,6 +45,7 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require("@tailwindcss/forms"),
 		require("@tailwindcss/typography"),
+    require('tailwind-scrollbar-hide')
   ],
 };
 
