@@ -1,8 +1,25 @@
 import { flights } from "./flights.js"
+import { faqs } from "./faq.js"
 
-const recommendedBox = document.querySelector('.recommended')
+const recommendContainer = document.querySelector('.recommended')
+const faqContainer = document.querySelector('.faq')
+const icons = [...document.querySelectorAll('.icons')]
+
 let scrollBox = document.createElement('div')
+let faqBox = document.createElement('div')
 scrollBox.classList.add('scroll')
+
+const toggleActive = (e) => {
+    const item = e.target
+    const filtered = icons.filter(icon=>icon!==item)
+    filtered.forEach(icon=>icon.classList.remove('active'))
+
+    if (item.classList.contains('active')) {
+        item.classList.remove('active')
+    } else {
+        item.classList.add('active')
+    }
+}
 
 flights.forEach( flight => {
     const structure = `
@@ -16,6 +33,21 @@ flights.forEach( flight => {
     `
     scrollBox.innerHTML += structure
 })
-console.log(scrollBox)
-recommendedBox.append(scrollBox)
+
+faqs.forEach( faq => {
+    const structure = `
+        <div id=${faq.id} class="mb-3 md:mb-12">
+            <h4 class="text-base md:text- text-primary md:text-3xl font-semibold mb-1 md:mb-7">${faq.question}</h4>
+            <p class="font-medium text-xs md:text-xl text-black md:max-w-[70%]">${faq.answer}</p>
+        </div>
+    `
+    faqBox.innerHTML += structure
+})
+
+icons.forEach( icon => {
+    icon.addEventListener('click', toggleActive)
+})
+
+recommendContainer.append(scrollBox)
+faqContainer.append(faqBox)
 

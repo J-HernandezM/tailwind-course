@@ -34,10 +34,10 @@ module.exports = {
           'iceland': "url('/public/img/iceland.jpg')",
         },
         gridTemplateColumns: {
-          'trending': '40% 60%'
+          'trending': '.4fr .6fr'
         },
         gridTemplateRows: {
-          'trending': '44% 28% 28%'
+          'trending': '.44fr .28fr .28fr'
         }
       },
   },
