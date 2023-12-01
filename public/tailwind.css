@@ -874,6 +874,10 @@ select {
   height: 100%;
 }
 
+.h-\[72px\] {
+  height: 72px;
+}
+
 .w-10\/12 {
   width: 83.333333%;
 }
@@ -901,6 +905,10 @@ select {
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
 }
 
 .shrink-0 {
@@ -941,6 +949,18 @@ select {
 
 .gap-9 {
   gap: 2.25rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-2xl {
@@ -1010,6 +1030,14 @@ select {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .p-5 {
@@ -1100,6 +1128,11 @@ select {
   font-size: 9px;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1110,6 +1143,10 @@ select {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .text-black {
@@ -1256,8 +1293,20 @@ select {
     margin-top: 1.5rem;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:block {
     display: block;
+  }
+
+  .md\:inline {
+    display: inline;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:hidden {
@@ -1274,6 +1323,10 @@ select {
 
   .md\:h-screen {
     height: 100vh;
+  }
+
+  .md\:h-\[150vh\] {
+    height: 150vh;
   }
 
   .md\:w-72 {
@@ -1300,12 +1353,24 @@ select {
     grid-template-rows: .44fr .28fr .28fr;
   }
 
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:justify-normal {
+    justify-content: normal;
+  }
+
   .md\:gap-3 {
     gap: 0.75rem;
   }
 
   .md\:gap-4 {
     gap: 1rem;
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
   }
 
   .md\:bg-sanFranciscoDesktop {
@@ -1322,6 +1387,11 @@ select {
     padding-right: 60px;
   }
 
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .md\:pb-16 {
     padding-bottom: 4rem;
   }
@@ -1336,6 +1406,10 @@ select {
 
   .md\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .md\:pt-40 {
+    padding-top: 10rem;
   }
 
   .md\:text-2xl {
