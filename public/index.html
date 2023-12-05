@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/9f00a2ad8c.js" crossorigin="anonymous"></script>
     <title>Travel Landing Page</title>
 </head>
-<body class="font-Montserrat">
+<body class="font-Montserrat dark:bg-gray-900">
     <header>
         <nav class="md:hidden w-full h-20 shadow-lg fixed left-0 bottom-0 bg-white z-20 flex items-center justify-center gap-9">
             <i class="icons active fa-solid fa-2xl fa-house" style="color: #f2f2f2;"></i>
@@ -19,16 +19,16 @@
             <i class="icons fa-solid fa-2xl fa-user" style="color: #f2f2f2;"></i>
         </nav>
         <nav class="hidden h-[72px] md:flex justify-between px-6 items-center">
-            <a class="text-primary text-lg font-bold" href="#home">Travel Flights</a>
+            <a class="text-primary dark:text-white text-lg font-bold" href="#home">Travel Flights</a>
             <div class="flex gap-12">
-                <a class="text-primary text-lg font-bold" href="#recommended">Recommended</a>
-                <a class="text-primary text-lg font-bold" href="#featured">Trending Stays</a>
-                <a class="text-primary text-lg font-bold" href="#faq">FAQ's</a>
-                <a class="text-primary text-lg font-bold" href="#about">About Us</a>
+                <a class="text-primary dark:text-white text-lg font-bold" href="#recommended">Recommended</a>
+                <a class="text-primary dark:text-white text-lg font-bold" href="#featured">Trending Stays</a>
+                <a class="text-primary dark:text-white text-lg font-bold" href="#faq">FAQ's</a>
+                <a class="text-primary dark:text-white text-lg font-bold" href="#about">About Us</a>
             </div>
             <div class="flex gap-6">
                 <i class="icons fa-solid fa-xl fa-magnifying-glass" style="color: #f2f2f2;"></i>
-                <i class="fa-solid fa-xl fa-moon" style="color: #f2f2f2;"></i>
+                <i class="toggleDark fa-solid fa-xl fa-moon" style="color: #f2f2f2;"></i>
                 <i class="icons fa-solid fa-xl fa-user" style="color: #f2f2f2;"></i>
             </div>
         </nav>
@@ -41,16 +41,16 @@
                 <div class="w-full h-full flex flex-col justify-between absolute top-0 z-10 items-center pt-16 pb-14 md:items-start md:px-16 md:justify-normal md:pt-40 md:gap-10">
                     <input placeholder="San Francisco" class="rounded-3xl w-52 border-none outline-none shadow-sm focus:w-11/12 h-12 max-w-sm pl-4 transition-all duration-300 focus-within:shadow-sm focus:ring-2 md:hidden" type="search" name="flight" id="search">
                     <p class="hidden md:block text-black text-4xl font-extrabold max-w-[400px]">Find More Locations like this</p>
-                    <button class="bg-white text-lg text-primary w-48 h-12 font-semibold rounded-3xl shadow-sm transition-all duration-500 hover:scale-110 hover:bg-primary hover:text-white">Explore more</button>
+                    <button class="bg-white text-lg text-primary dark:text-black w-48 h-12 font-semibold rounded-3xl shadow-sm transition-all duration-500 hover:scale-110 hover:bg-primary hover:text-white">Explore more</button>
                 </div>
             </div>
         </div>
         <div class="md:px-10">
             <div id="recommended" class="mt-5">
-                <h2 class="pl-5 md:text-4xl text-primary text-2xl font-semibold">Our Recomendations</h2>
+                <h2 class="pl-5 md:text-4xl text-primary dark:text-white text-2xl font-semibold">Our Recomendations</h2>
             </div>
             <div id="featured">
-                <h2 class="pl-5 md:text-4xl text-primary text-2xl font-semibold">Trending Stays</h2>
+                <h2 class="pl-5 md:text-4xl text-primary dark:text-white text-2xl font-semibold">Trending Stays</h2>
                 <div class="p-5 grid grid-cols-1 gap-9 justify-items-center md:grid-cols-trending md:grid-rows-trending md:h-[150vh] md:mx-auto">
                     <div class="rounded-2xl w-10/12 h-96 px-6 py-12 text-white bg-cover bg-center bg-fixed bg-chicago md:w-full md:h-full md:col-start-1 md:col-end-3">
                         <h2 class="font-bold text-2xl md:text-4xl" >Chicago</h2>
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div id="faq" class="p-5">
-                <h2 class="md:text-4xl text-primary text-2xl font-semibold mb-5 md:mb-10">FAQ's</h2>
+                <h2 class="md:text-4xl text-primary dark:text-white text-2xl font-semibold mb-5 md:mb-10">FAQ's</h2>
             </div>
         </div>
     </main>
